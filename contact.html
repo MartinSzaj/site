@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Snowy - Snow Shoveling</title>
+		<link rel="stylesheet" href="style-contact.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+	<body>
+		<header class="header">
+			<nav class="navbar">
+				<div class="nav-links1">
+				<a href="index.html" class="logo"><img src="images/logo-nobg.png"></a>
+				<i class="fa fa-bars" onclick="showMenu()"></i>
+				</div>
+				<div class="nav-links" id="navLinks">
+					<i class="fa fa-times" onclick="hideMenu()"></i>
+					<ul id="menu">
+						<li><a href="contact.html" class="main-p">Contact Us</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="order.html">Order</a></li>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<script>
+			var navLinks = document.getElementById("navLinks");
+			function showMenu(){
+				navLinks.style.right = "0";
+			}
+			function hideMenu(){
+				navLinks.style.right = "-200px";
+			}
+		</script>
+<!----------Form--------------->
+		 <div class="container">
+    <form class="" action="https://formsubmit.co/servicesnowy@gmail.com" method="POST">
+      <i class="fa fa-paper-plane"></i>
+
+      <div class="input-group">
+        <label for="name">Full Name</label>
+        <input type="text" placeholder="Enter your full name" id="name" name="name" onkeyup="validateName()" value="" required>
+		  <span id="name-error">error</span>
+      </div>
+
+      <div class="input-group">
+        <label for="phone">Phone No.</label>
+        <input type="tel" placeholder="123 456 7890" id="phone" name="phone" onkeyup="validatePhone()" value="" required>
+		  <span id="phone-error">error</span>
+      </div>
+
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter Email" id="email" name="email" value="" required>
+		  <span id="email-error">error</span>
+      </div>
+
+
+      <div class="input-group">
+        <label for="subject">Subject</label>
+        <input type="text" placeholder="Enter the subject of your message" id="subject" name="subject" onkeyup="validateSubject()" value="" required>
+		  <span id="subject-error">error</span>
+      </div>
+
+      <div class="input-group">
+        <label for="message">Your Message</label>
+        <textarea rows="5" placeholder="Enter your message" id="message" name="message" required></textarea>
+		  <span id="message-error">error</span>
+
+      </div>
+    <button type="submit" name="send">Submit</button>
+		<span id="submit-error"> fix</span>
+
+  </form>
+             <script type="text/javascript">
+var nameError = document.getElementById('name-error');
+var phoneError = document.getElementById('phone-error');
+var emailError = document.getElementById('email-error');
+var messageError = document.getElementById('message-error');
+var submitError = document.getElementById('submit-error');
+
+function validateName(){
+	var name = document.getElementById('name').value;
+
+if (name.length == 0){
+	nameError.innerHTML = 'Name is required';
+	return false;
+}
+if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*&/)){
+    nameError.innerHTML = 'Write full name';
+    return false;
+}
+
+nameError.innerHTML = '<i class="fa fa-check-circle" aria-hidden="true"></i>';
+return true;
+}
+             </script>
+  </div>
+<!--------------Footer section-------------->
+		<section class="foot">
+
+			<img class="wave-foot" src="images/images/wave2.png">
+			<div class="foot-p">
+				<p class="support">You can support us with an Interac E-Transfer for: martinszallasz.ua@gmail.com. We really appreciate every donation!</p>
+				<p class="nice-day">Have a nice day!</p>
+			</div>
+			<p class="right-inc">© Right Inc.</p>
+		</section>
+	</body>
+</html>

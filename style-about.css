@@ -1,0 +1,273 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+.header{
+    position: fixed;
+    top:0;
+    min-height: 30px ;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    z-index: 100;
+}
+.logo img{
+    position: absolute;
+    margin: 0 10px;
+    cursor: pointer;
+    width: 240px;
+}
+.navbar{
+      background-image: linear-gradient(to right, #8aace3, #35578c);
+      width:100%;
+}
+#menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+
+}
+#menu li {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  position: relative;
+  float: right;
+  }
+.main-p{
+    color: #afc975;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1em 1.7em;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9em;
+  position: relative;
+  Letter-spacing: 1px;
+  font-weight: 700px;
+
+}
+.nav-links ul li a::after{
+   content:'';
+   width:0%;
+   height: 2.5px;
+   background: #333333;
+   display: block;
+   margin: 0.25em auto;
+   transition: 0.5s;
+}
+.nav-links ul li a:hover::after{
+    width: 100%;
+}
+.nav-links ul li a:hover{
+    color: #afc975;
+    transition: 0.45s;
+}
+nav .fa{
+    display: none;
+}
+/*--------------banner section--------------*/
+
+#banner {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 200vh;
+
+}
+.formFooter-wrapper{
+    position: sticky;
+    float: bottom;
+}
+.h-p{
+    position: relative;
+    margin: 100px 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+}
+.snowy, .gallery, .thanks{
+    font-size: 2em;
+    padding: 0 0 20px 0;
+}
+.snowy-p, .thanks-p, .gallery-p{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0 0 100px 0;
+}
+.gallery-p{
+    padding: 50px 0 0 0;
+}
+
+/*--------Footer---------*/
+.footer{
+    position: relative;
+    margin: 300px 0 0 0;
+    height: 300px;
+    width: 100%;
+    z-index: 10;
+    background-image: linear-gradient(to right, #8aace3, #35578c);
+    background-size: cover;
+    min-height: 5vh;
+}
+.footer ul{
+    justify-content: space-between;
+    position: absolute;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    min-height: 10vh;
+}
+.foot-p{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin:  20px;
+}
+.support{
+    position: absolute;
+    text-align: center;
+    padding: 10vw 20px 0;
+    font-size: 1.25em;
+}
+.right-inc{
+    position: absolute;
+    right: 2em;
+    bottom: 1em;
+    margin: 0;
+    font-size: 20px;
+    min-height: 2vh;
+}
+.wave-foot{
+    position: absolute;
+    margin: 0 0 0 0;
+    width: 100%;
+    min-height: 5vh;
+}
+.nice-day{
+    position: absolute;
+    margin: 200px 0 0 0;
+    font-size: 20px;
+    min-height: 2vh;
+}
+/*----------Media-------------*/
+@media(max-width: 500px){
+     .logo img{
+        width: 150px;
+    }
+    #menu li a{
+        font-size: 0.5em;
+    }
+    .sm-img{
+        margin: 50px 5%;
+        width: 90%;
+        display: flex;
+
+    }
+    .sm-img a img{
+        width: 40px;
+    }
+    .foot{
+        margin: 0;
+    }
+    .header{
+        background-image: linear-gradient(to right, #8aace3, #35578c);
+
+    }
+    .nav-links{
+        position: absolute;
+        background-image: linear-gradient(to right, #8aace3, #35578c);
+        height: 100vh;
+        width: 90px;
+        top: 0;
+        right: -90px;
+        text-align: left;
+        z-index: 5;
+        padding:0;
+        transition: 1s;
+    }
+    #menu li{
+        display: block;
+        float: left;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px 10px 0 0;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .fa-bars{
+        float: right;
+    }
+    .fa-times{
+        padding:0 0 0 10px;
+    }
+
+}
+@media(min-width: 500px) and (max-width: 800px){
+    .logo img{
+        width: 150px;
+    }
+    #menu li a{
+        font-size: 0.5em;
+    }
+    .sm-img{
+        margin: 100px 5%;
+        width: 90%;
+        display: flex;
+
+    }
+    .sm-img a img{
+        width: 40px;
+    }
+    .foot{
+        margin: 0;
+    }
+    .header{
+        background-image: linear-gradient(to right, #8aace3, #35578c);
+
+    }
+    .nav-links{
+        position: absolute;
+        background-image: linear-gradient(to right, #8aace3, #35578c);
+        height: 100vh;
+        width: 90px;
+        top: 0;
+        right: -90px;
+        text-align: left;
+        z-index: 5;
+        padding:0;
+        transition: 1s;
+    }
+    #menu li{
+        display: block;
+        float: left;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px 10px 0 0;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .fa-bars{
+        float: right;
+    }
+    .fa-times{
+        padding:0 0 0 10px;
+    }
+}
+
+
+

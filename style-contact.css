@@ -1,0 +1,334 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+.header{
+    position: fixed;
+    top:0;
+    min-height: 30px ;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    z-index: 100;
+}
+.logo img{
+    position: absolute;
+    margin: 0 10px;
+    cursor: pointer;
+    width: 240px;
+}
+.navbar{
+      background-image: linear-gradient(to right, #8aace3, #35578c);
+      width:100%;
+}
+#menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+
+}
+#menu li {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  position: relative;
+  float: right;
+  }
+.main-p{
+    color: #afc975;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1em 1.7em;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9em;
+  position: relative;
+  Letter-spacing: 1px;
+  font-weight: 700px;
+
+}
+.nav-links ul li a::after{
+   content:'';
+   width:0%;
+   height: 2.5px;
+   background: #333333;
+   display: block;
+   margin: 0.25em auto;
+   transition: 0.5s;
+}
+.nav-links ul li a:hover::after{
+    width: 100%;
+}
+.nav-links ul li a:hover{
+    color: #afc975;
+    transition: 0.45s;
+}
+nav .fa{
+    display: none;
+}
+/*-----------Form--------------*/
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container form{
+    width: 90%;
+    max-width: 500px;
+    padding: 50px 30px 20px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+.fa-paper-plane{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    font-size: 26px;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.input-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+.input-group label{
+    flex-basis: 28%;
+}
+.input-group input, .input-group textarea{
+    flex-basis: 68%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+    color: #333;
+    font-size: 16px;
+}
+::placeholder{
+    font-size: 14px;
+}
+
+form button{
+    background: #141a34;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 10px;
+}
+.input-group span{
+    position: absolute;
+    bottom: 12px;
+    right: 17px;
+    font-size: 14px;
+    color: red;
+}
+#submit-error{
+    color:red;
+}
+.input-group span i{
+    color:seagreen;
+}
+.formFooter-wrapper{
+    position: sticky;
+    float: bottom;
+}
+/*------Thanks--------*/
+.thanks-div{
+    width: 95vw;
+    padding: 0 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.thanks-h{
+    font-size: 3em;
+}
+.thanks-p{
+    font-size: 1.5em;
+}
+/*--------------banner section--------------*/
+
+#banner {
+    position: relative;
+    margin: 55px 0 0 0;
+    width: 100%;
+    height: 200vh;
+
+}
+/*--------Footer---------*/
+.foot{
+    position: absolute;
+    margin: 0;
+    height: 300px;
+    width: 100%;
+    z-index: 10;
+    background-image: linear-gradient(to right, #8aace3, #35578c);
+    background-size: cover;
+    min-height: 5vh;
+}
+.foot-p{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 5vw;
+}
+.support{
+    position: absolute;
+    text-align: center;
+    padding: 15vw 0 0;
+    font-size: 1.15em;
+}
+.right-inc{
+    position: absolute;
+    right: 2em;
+    bottom: 1em;
+    margin: 0;
+    font-size: 20px;
+    min-height: 2vh;
+}
+.wave-foot{
+    position: absolute;
+    margin: 0 0 0 0;
+    width: 100%;
+    min-height: 5vh;
+}
+.nice-day{
+    position: absolute;
+    margin: 200px 0 0 0;
+    font-size: 20px;
+    min-height: 2vh;
+}
+/*---Media---*/
+@media(max-width: 500px){
+     .logo img{
+        width: 150px;
+    }
+    #menu li a{
+        font-size: 0.5em;
+    }
+    .sm-img{
+        margin: 50px 5%;
+        width: 90%;
+        display: flex;
+
+    }
+    .sm-img a img{
+        width: 40px;
+    }
+    .foot{
+        margin: 0;
+    }
+    .header{
+        background-image: linear-gradient(to right, #8aace3, #35578c);
+
+    }
+    .nav-links{
+        position: absolute;
+        background-image: linear-gradient(to right, #8aace3, #35578c);
+        height: 100vh;
+        width: 90px;
+        top: 0;
+        right: -90px;
+        text-align: left;
+        z-index: 5;
+        padding:0;
+        transition: 1s;
+    }
+    #menu li{
+        display: block;
+        float: left;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px 10px 0 0;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .fa-bars{
+        float: right;
+    }
+    .fa-times{
+        padding:0 0 0 10px;
+    }
+
+}
+@media(min-width: 500px) and (max-width: 800px){
+    .logo img{
+        width: 150px;
+    }
+    #menu li a{
+        font-size: 0.5em;
+    }
+    .sm-img{
+        margin: 100px 5%;
+        width: 90%;
+        display: flex;
+
+    }
+    .sm-img a img{
+        width: 40px;
+    }
+    .foot{
+        margin: 0;
+    }
+    .header{
+        background-image: linear-gradient(to right, #8aace3, #35578c);
+
+    }
+    .nav-links{
+        position: absolute;
+        background-image: linear-gradient(to right, #8aace3, #35578c);
+        height: 100vh;
+        width: 90px;
+        top: 0;
+        right: -90px;
+        text-align: left;
+        z-index: 5;
+        padding:0;
+        transition: 1s;
+    }
+    #menu li{
+        display: block;
+        float: left;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px 10px 0 0;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .fa-bars{
+        float: right;
+    }
+    .fa-times{
+        padding:0 0 0 10px;
+    }
+}
+

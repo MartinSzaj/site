@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Snowy - Snow Shoveling</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<header class="header">
+			<nav class="navbar">
+				<div class="nav-links1">
+				<a href="index.html" class="logo"><img src="images/logo-nobg.png"></a>
+				<i class="fa fa-bars" onclick="showMenu()"></i>
+				</div>
+				<div class="nav-links" id="navLinks">
+					<i class="fa fa-times" onclick="hideMenu()"></i>
+					<ul id="menu">
+						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="order.html">Order</a></li>
+						<li><a href="index.html" class="main-p">Home</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<script>
+			var navLinks = document.getElementById("navLinks");
+			function showMenu(){
+				navLinks.style.right = "0";
+			}
+			function hideMenu(){
+				navLinks.style.right = "-200px";
+			}
+		</script>
+<!--------------banner section-------------->
+		<section id="banner">
+			<div class="dipping">
+				<img src="images/hole.png" class="hole">
+				<img src="images/dipping1.png" class="dipping1">
+				<img src="images/dipping2.png" class="dipping2">
+			</div>
+			<div class="row">
+					<h1 class="title1">
+						FAST, CHEAP, EFFICIENT
+					</h1>
+				<div class="div-banner">
+					<p>
+						Snowy is a snow cleaning company across the city of Toronto
+					</p>
+					<a href="order.html" class="order-btn2"><button type="button" >ORDER SNOW CLEANING</button></a>
+				</div>
+				<img src="images/homep-snowy1.png" class="home-img">
+			</div>
+			<div class="div-desc">
+				<h1 class="h-desc">What we do and how we do it</h1>
+				<p class="snwy-desc">
+					Snowy is a team who does snow cleaning with departure to our clients. We do that fast, cheap, and efficient! We are a starting organisation and would be greatful of any your support!
+				</p>
+				<img class="punctuality-img" src="images/punctuality-nobg.png">
+			</div>
+			<div class="div-price">
+				<h1 class="h-price">Pricing</h1>
+				<p class="price">
+					 Our price is lower than in 50% of Toronto snow cleaning companies. Our price depends on weather, amount of work, and distance to travel. To look for cost of your service, please contact us.
+				</p>
+				<img class="price-img" src="images/money.webp" width="320px">
+				<div class="contact-div">
+				<a href="contact-us.html" class="contact-btn"><button type="button" >CONTACT US</button></a>
+				</div>
+			</div>
+		</section>
+		<div class="formFooter-heightMask">
+		  </div>
+		  <div class="formFooter f6 branding21">
+			<div class="formFooter-wrapper formFooter-leftSide">
+			</div>
+			<div class="formFooter-wrapper formFooter-rightSide">
+			  <span class="formFooter-text">
+				It's an alpha version of the website and could have some issues. If you detect any, please contact us at servicesnowy@gmail.com
+			  </span>
+			  <input class="formFooter-button" type="button" onclick="this.parentNode.parentNode.style.display = 'none'" value="I agree">
+			</div>
+		  </div>
+
+<!--------------Footer section-------------->
+		<section class="foot">
+
+			<img class="wave-foot" src="images/images/wave2.png">
+			<div class="foot-p">
+				<p class="support">You can support us with an Interac E-Transfer for: martinszallasz.ua@gmail.com. We really appreciate every donation!</p>
+				<p class="nice-day">Have a nice day!</p>
+			</div>
+			<p class="right-inc">© Right Inc.</p>
+		</section>
+	</body>
+</html>

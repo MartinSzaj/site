@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Snowy - Snow Shoveling</title>
+		<link rel="stylesheet" href="style-about.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header class="header">
+			<nav class="navbar">
+				<div class="nav-links1">
+				<a href="index.html" class="logo"><img src="images/logo-nobg.png"></a>
+				<i class="fa fa-bars" onclick="showMenu()"></i>
+				</div>
+				<div class="nav-links" id="navLinks">
+					<i class="fa fa-times" onclick="hideMenu()"></i>
+					<ul id="menu">
+						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="about.html" class="main-p">About Us</a></li>
+						<li><a href="order.html">Order</a></li>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<script>
+			var navLinks = document.getElementById("navLinks");
+			function showMenu(){
+				navLinks.style.right = "0";
+			}
+			function hideMenu(){
+				navLinks.style.right = "-200px";
+			}
+		</script>
+<!-----------Banner section---------->
+		<section class="banner">
+			<div class="h-p">
+				<h1 class="snowy">Snowy</h1>
+				<p class="snowy-p">Snowy is a starting project and a part of Right Inc. We clean snow for small business and private properties. We have started the project on December 2022 and we need your support to develop and grow! The project was started by just one person - Martin and it was his first html project ever. And because our owner is from Ukraine, our project supports Ukraine! Keep in mind that while the war in Ukraine is going part of our earnings will be sent for Ukrainian forces! </p>
+				<h1 class="thanks">Thanks</h1>
+				<p class="thanks-p">We have inspired our html and css on w3school.com, Easy Tutorials, and Haudi Ho. Our forms was borrowed from Jotforms.com. Thank you for all of them for helping us create the website!</p>
+				<h1 class="gallery">Gallery</h1>
+				<p class="gallery-p">Sorry, no content yet</p>
+			</div>
+
+		</section>
+<!--------------Footer section-------------->
+		<section class="footer">
+
+			<img class="wave-foot" src="images/images/wave2.png">
+			<div class="foot-p">
+				<p class="support">You can support us with an Interac E-Transfer for: martinszallasz.ua@gmail.com. We really appreciate every donation!</p>
+				<p class="nice-day">Have a nice day!</p>
+			</div>
+			<p class="right-inc">© Right Inc.</p>
+		</section>
+	</body>
+</html>

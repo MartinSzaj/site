@@ -1,0 +1,601 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+.header{
+    position: fixed;
+    top:0;
+    min-height: 30px ;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    z-index: 100;
+}
+.logo img{
+    position: absolute;
+    margin: 0 10px;
+    cursor: pointer;
+    width: 240px;
+}
+.navbar{
+      background-image: linear-gradient(to right, #8aace3, #35578c);
+      width:100%;
+}
+#menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+
+}
+#menu li {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  position: relative;
+  float: right;
+  }
+.main-p{
+    color: #afc975;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1em 1.7em;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9em;
+  position: relative;
+  Letter-spacing: 1px;
+  font-weight: 700px;
+
+}
+.nav-links ul li a::after{
+   content:'';
+   width:0%;
+   height: 2.5px;
+   background: #333333;
+   display: block;
+   margin: 0.25em auto;
+   transition: 0.5s;
+}
+.nav-links ul li a:hover::after{
+    width: 100%;
+}
+.nav-links ul li a:hover{
+    color: #afc975;
+    transition: 0.45s;
+}
+nav .fa{
+    display: none;
+}
+/*--------------banner section--------------*/
+
+#banner {
+    position: relative;
+    margin: 55px 0;
+    width: 100%;
+    height: 200vh;
+
+}
+.row{
+    position: relative;
+    margin: 20px 0 0 40px;
+    height: auto;
+}
+.div-banner{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    height: auto;
+    padding: 0;
+    margin: 0 0 0 0;
+    }
+.home-img{
+    position: absolute;
+    right:0;
+    bottom: -12.5em;
+    width: 45%;
+    min-height: 10vh;
+}
+.title1{
+    font-size: 2.5em;
+    color: #000;
+    position: relative;
+    padding: 0 40% 0 0;
+    float: left;
+    min-height: 5vh;
+    z-index: 1;
+    text-align: center;
+}
+.div-banner p{
+    font-size: 25px;
+    color: #000;
+    position: relative;
+    margin: 0;
+    min-height: 5vh;
+    z-index: 1;
+}
+.order-btn2 button{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border: 0.125em solid #35578c;
+    padding: 0.9em 1.8em;
+    margin: 3em 0 0 0;
+    font-size: 1.25em;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 1em;
+    z-index: 10;
+    min-height: 5vh;
+    transition: 0.5s;
+}
+.order-btn2 button:hover{
+    margin: 2.9em 0 -0.1em 0;
+    padding: 1em 2em;
+    background: #35578c;
+    transition: 0.5s;
+}
+.dipping{
+    position: relative;
+    margin: -3px 0 0 0;
+    padding: 0 0 9em 0;
+    z-index: 1;
+    min-height: 10px;
+}
+.dipping1{
+    position: absolute;
+    margin: px 0 0 -1px;
+    z-index: 1;
+    min-height: 5vh;
+    width: 49.9%;
+}
+.dipping2{
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    min-height: 5vh;
+    width: 49.9%;
+    margin: px 0 0 0;
+}
+.hole{
+    position: absolute;
+    margin: 1px 0 0 47.5%;
+    width: 5.5%;
+}
+.div-desc{
+    position: relative;
+    margin: 25% 0 0 0;
+    width: 100%;
+    height: 55vh;
+    background: #eef5cb;
+}
+.h-desc{
+    position: relative;
+    margin:0;
+    font-size: 2.5em;
+    padding: 1.5% 0;
+    text-align: center;
+}
+.snwy-desc{
+    position: absolute;
+    font-size: 1.5em;
+    margin: 50px 5%;
+    padding: 0;
+    width: 40%;
+    min-height: 5vh;
+    overflow: clip;
+    overflow-clip-margin: 100px;
+}
+.punctuality-img{
+    position: absolute;
+    right: 5%;
+    padding: 0;
+    margin: 0 0;
+    width: 250px;
+}
+.div-price{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background: #aadafa
+}
+.h-price{
+    position: relative;
+    margin:0;
+    font-size: 2.5em;
+    padding: 1.5% 0;
+    text-align: center;
+}
+.price{
+    position: absolute;
+    right: 5%;
+    font-size: 1.5em;
+    margin: 50px 5%;
+    padding: 0;
+    width: 38%;
+    min-height: 5vh;
+    overflow: clip;
+    overflow-clip-margin: 50px;
+}
+.price-img{
+    position: absolute;
+    left: 5%;
+}
+.order-div{
+    display: flex;
+    align-items: center;
+}
+.contact-btn button{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border: 0.125em solid #35578c;
+    padding: 0.9em 1.8em;
+    font-size: 1.25em;
+    background: transparent;
+    position: absolute;
+    cursor: pointer;
+    margin: 330px 42%;
+    border-radius: 1em;
+    z-index: 10;
+    min-height: 5vh;
+    transition: 0.5s;
+}
+.contact-btn button:hover{
+    margin: 328px 41.70% 2.5px ;
+    padding: 1em 2em;
+    background: #35578c;
+    transition: 0.5s;
+}
+.formFooter-wrapper{
+    position: sticky;
+    float: bottom;
+}
+.formFooter{position:fixed;left:0;right:0;bottom:0;padding:0 .875pxem;background-color:#414247;z-index:15}
+.formFooter,.formFooter-wrapper{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center}
+.formFooter-wrapper.formFooter-leftSide{margin-right:auto}
+.formFooter-content{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center}
+.formFooter-rightSide{margin-left:.5pxem}
+.formFooter-rightSide .formFooter-text{color:#bfbfbf;font-size:.75em;margin-right:.9375em}
+.formFooter-button{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-negative:0;flex-shrink:0;width:200px;padding:.625em 0;border-radius:3px;font-size:.875em;transition:background-color .3s}
+.branding21.formFooter{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;background-color:#0a1551}
+.branding21.formFooter .formFooter-logo{height:44px}
+.branding21.formFooter .formFooter-text{color:#f3f3fe}
+.branding21.formFooter .formFooter-button{background-color:#78bb07;border-color:#78bb07}
+ .form-input[data-type=control_fullname]
+ .form-input{width:100%}table{width:100%!important}}
+ @media screen and (max-width:480px){
+ div.question-wrapper{-ms-flex-direction:column;flex-direction:column}
+ }
+/*--------Footer---------*/
+.foot{
+    position: absolute;
+    margin: 600px 0 0 0;
+    height: 300px;
+    width: 100%;
+    z-index: 10;
+    background-image: linear-gradient(to right, #8aace3, #35578c);
+    background-size: cover;
+    min-height: 5vh;
+}
+.foot-p{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin:  20px;
+}
+.support{
+    position: absolute;
+    text-align: center;
+    padding: 10vw 20px 0;
+    font-size: 1.25em;
+}
+.right-inc{
+    position: absolute;
+    right: 2em;
+    bottom: 1em;
+    margin: 0;
+    font-size: 20px;
+    min-height: 2vh;
+}
+.wave-foot{
+    position: absolute;
+    margin: 0 0 0 0;
+    width: 100%;
+    min-height: 5vh;
+}
+.nice-day{
+    position: absolute;
+    margin: 200px 0 0 0;
+    font-size: 20px;
+    min-height: 2vh;
+}
+/*---Media---*/
+@media(min-width: 800px) and (max-width: 1200px){
+
+    .div-banner{
+        width: 95%;
+    }
+    .home-img{
+        width: 80%;
+        position: relative;
+        float: right;
+        margin: -100px 0 0 0;
+    }
+    .div-desc{
+        margin: 700px 0 0 0;
+    }
+    .title1{
+        width: 95%;
+        padding: 0;
+    }
+    .div-banner p{
+        text-align: center;
+        width: 95%;
+    }
+}
+@media(max-width: 500px){
+     .logo img{
+        width: 150px;
+    }
+    #menu li a{
+        font-size: 0.5em;
+    }
+    .dipping{
+        margin: -27px 0;
+    }
+    .div-banner{
+        width: 100%;
+        margin: 0 0;
+    }
+    .home-img{
+        margin: -150px 0 0 0;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .title1{
+        font-size: 1.3em;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0 -30px;
+    }
+    .div-banner p{
+        font-size: 18px;
+        margin: 0 0;
+    }
+    .order-btn2 button{
+        font-size: 0.5em;
+    }
+    .order-btn2 button:hover{
+        margin: 3em 0 0 0;
+    }
+    .div-desc{
+        margin: 250px 0 0 0;
+        height: 100vh;
+    }
+    .h-desc{
+        font-size: 1.2em;
+        padding: 5% 0;
+    }
+    .snwy-desc{
+        font-size: 18px;
+        width: 95%;
+        margin: 0 10px;
+
+    }
+    .punctuality-img{
+        margin: 200px 5px;
+        min-height: 100px;
+        width: 90%;
+    }
+    .div-price{
+        height: 60vh;
+    }
+    .h-price{
+        font-size: 1.3em;
+        padding: 5% 35%;
+        width: 30%;
+    }
+    .price{
+        display: flex;
+        width: 95%;
+        margin: 10px -5% 0 0;
+        font-size: 18px;
+    }
+    .contact-btn button{
+        margin: 450px 15%;
+    }
+    .contact-btn button:hover{
+        margin: 448px 14%;
+    }
+    .price-img{
+        width: 90%;
+        margin: 150px 0;
+        display: flex;
+    }
+    .sm-img{
+        margin: 50px 5%;
+        width: 90%;
+        display: flex;
+
+    }
+    .sm-img a img{
+        width: 40px;
+    }
+    .foot{
+        margin: 500px 0 0 0;
+    }
+    .header{
+        background-image: linear-gradient(to right, #8aace3, #35578c);
+
+    }
+    .nav-links{
+        position: absolute;
+        background-image: linear-gradient(to right, #8aace3, #35578c);
+        height: 100vh;
+        width: 90px;
+        top: 0;
+        right: -90px;
+        text-align: left;
+        z-index: 5;
+        padding:0;
+        transition: 1s;
+    }
+    #menu li{
+        display: block;
+        float: left;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px 10px 0 0;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .fa-bars{
+        float: right;
+    }
+    .fa-times{
+        padding:0 0 0 10px;
+    }
+
+}
+@media(min-width: 500px) and (max-width: 800px){
+    .logo img{
+        width: 150px;
+    }
+    #menu li a{
+        font-size: 0.5em;
+    }
+    .dipping{
+        margin: -27px 0;
+    }
+    .div-banner{
+        width: 100%;
+        margin: 0 0;
+    }
+    .home-img{
+        margin: -150px 0 0 0;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .title1{
+        font-size: 1.3em;
+        left: 0;
+        width: 95vw;
+        padding: 0;
+        margin: 0px -30px;
+    }
+    .div-banner p{
+        font-size: 18px;
+    }
+    .order-btn2 button{
+        font-size: 0.5em;
+    }
+    .order-btn2 button:hover{
+        margin: 2.9em 0 0.1em 0;
+    }
+    .div-desc{
+        margin: 250px 0 0 0;
+        height: 350px;
+    }
+    .h-desc{
+        font-size: 1.2em;
+        padding: 5% 0;
+    }
+    .snwy-desc{
+        font-size: 18px;
+        width: 50%;
+        margin: 0 10px;
+
+    }
+    .punctuality-img{
+        margin: 0px 5px;
+        width: 200px;
+    }
+    .div-price{
+        height: 300px ;
+    }
+    .h-price{
+        font-size: 1.3em;
+        padding: 5% 35%;
+        width: 30%;
+    }
+    .price{
+        display: flex;
+        width: 40%;
+        margin: 0 0 0 5%;
+        font-size: 18px;
+    }
+    .contact-btn button{
+        margin: 250px 30%;
+    }
+    .contact-btn button:hover{
+        margin: 248px 29.7%;
+    }
+    .price-img{
+        width: 40%;
+        margin: 0px 0;
+        display: flex;
+    }
+    .sm-img{
+        margin: 100px 5%;
+        width: 90%;
+        display: flex;
+
+    }
+    .sm-img a img{
+        width: 40px;
+    }
+    .foot{
+        margin: 200px 0 0 0;
+    }
+    .header{
+        background-image: linear-gradient(to right, #8aace3, #35578c);
+
+    }
+    .nav-links{
+        position: absolute;
+        background-image: linear-gradient(to right, #8aace3, #35578c);
+        height: 100vh;
+        width: 90px;
+        top: 0;
+        right: -90px;
+        text-align: left;
+        z-index: 5;
+        padding:0;
+        transition: 1s;
+    }
+    #menu li{
+        display: block;
+        float: left;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px 10px 0 0;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .fa-bars{
+        float: right;
+    }
+    .fa-times{
+        padding:0 0 0 10px;
+    }
+}
+
