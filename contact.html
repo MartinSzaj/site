@@ -52,36 +52,36 @@
       <div class="input-group">
         <label for="name">Full Name</label>
         <input type="text" placeholder="Enter your full name" id="name" name="name" onkeyup="validateName()" value="" required>
-		  <span id="name-error">error</span>
+		  <span id="name-error"></span>
       </div>
 
       <div class="input-group">
         <label for="phone">Phone No.</label>
         <input type="tel" placeholder="123 456 7890" id="phone" name="phone" onkeyup="validatePhone()" value="" required>
-		  <span id="phone-error">error</span>
+		  <span id="phone-error"></span>
       </div>
 
       <div class="input-group">
         <label for="email">Email</label>
-        <input type="email" placeholder="Enter Email" id="email" name="email" value="" required>
-		  <span id="email-error">error</span>
+        <input type="email" placeholder="Enter Email" id="email" name="email" onkeyup="validateEmail()" value="" required>
+		  <span id="email-error"></span>
       </div>
 
 
       <div class="input-group">
         <label for="subject">Subject</label>
         <input type="text" placeholder="Enter the subject of your message" id="subject" name="subject" onkeyup="validateSubject()" value="" required>
-		  <span id="subject-error">error</span>
+		  <span id="subject-error"></span>
       </div>
 
       <div class="input-group">
         <label for="message">Your Message</label>
-        <textarea rows="5" placeholder="Enter your message" id="message" name="message" required></textarea>
-		  <span id="message-error">error</span>
+        <textarea rows="5" placeholder="Enter your message" id="message" name="message" onkeyup="validateMessage()" required></textarea>
+		  <span id="message-error"></span>
 
       </div>
-    <button type="submit">Submit</button>
-		<span id="submit-error"> fix</span>
+    <button type="submit" onclick="return validateForm()">Submit</button>
+		<span id="submit-error"></span>
 
   </form>
              <script type="text/javascript">
@@ -90,6 +90,7 @@ var phoneError = document.getElementById('phone-error');
 var emailError = document.getElementById('email-error');
 var messageError = document.getElementById('message-error');
 var submitError = document.getElementById('submit-error');
+var subjectError = document.getElementById('subject-error');
 
 function validateName(){
 	var name = document.getElementById('name').value;
@@ -98,14 +99,81 @@ if (name.length == 0){
 	nameError.innerHTML = 'Name is required';
 	return false;
 }
-if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*&/)){
+if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
     nameError.innerHTML = 'Write full name';
     return false;
 }
 
-nameError.innerHTML = '<i class="fa fa-check-circle" aria-hidden="true"></i>';
+nameError.innerHTML = '<i class="fa fa-check-circle"></i>';
 return true;
 }
+function validatePhone(){
+	var phone = document.getElementById('phone').value;
+
+	if (phone.length == 0){
+	phoneError.innerHTML = 'Phone is required';
+	return false;
+
+	if (phone.length !== 10){
+	phoneError.innerHTML = 'Phone should be 10 digits';
+	return false;
+
+	if(!phone.match(/^[0-9]{10}$/)){
+	phoneError.innerHTML = 'Please use digits';
+	return false;
+	}
+	phoneError.innerHTML = '<i class="fa fa-check-circle"></i>';
+	return true;
+
+}
+function validateEmail(){
+	var email = document.getElementById('email').value;
+
+	if (email.length == 0){
+	emailError.innerHTML = 'Email is required';
+	return false;
+
+	if(!email.match(/^[A-Za-z]\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
+	emailError.innerHTML = 'Email invalid';
+	return false;
+	}
+	emailError.innerHTML = '<i class="fa fa-check-circle"></i>';
+	return true;
+}
+function validateMessage(){
+	var message = document.getElementById('message').value;
+	var required = 50;
+	var left = required - message.length;
+
+	if (left > 0){
+	messageError.innerHTML = left + 'More characters required';
+	return false;
+
+	messageError.innerHTML = '<i class="fa fa-check-circle"></i>';
+	return true;
+}
+function validateSubject(){
+	var subject = document.getElementById('subject').value;
+
+if (subject.length == 0){
+	subjectError.innerHTML = 'Subject is required';
+	return false;
+}
+if(!subject.match(/^[A-Za-z]$/)){
+    subjectError.innerHTML = 'Please use latin letters';
+    return false;
+}
+
+subjectError.innerHTML = '<i class="fa fa-check-circle"></i>';
+return true;
+}
+function validateForm(){
+	if(!validateName() || !validatePhone() || !validateEmail() || !validateMessage() || validateSubject()){
+		submitError.style.display = 'block';
+		submitError.innerHTML = 'Please fix error(s) to submit';
+		setTimeout(function(){submitError.style.display = 'none';}, 3000);
+		return false
+	}
              </script>
   </div>
 <!--------------Footer section-------------->
