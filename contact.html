@@ -50,34 +50,49 @@
 
 
       <div class="input-group">
+		  <div class="label">
         <label for="name">Full Name</label>
-        <input type="text" placeholder="Enter your full name" id="name" name="name" onkeyup="validateName()" value="" required>
+			  <label class="required">*</label>
+		  </div>
+			  <input type="text" placeholder="Enter your full name" id="name" name="name" onkeyup="validateName()" value="" required>
 		  <span id="name-error"></span>
       </div>
 
       <div class="input-group">
+		  <div class="label">
         <label for="phone">Phone No.</label>
+			  <label class="required">*</label>
+		  </div>
         <input type="tel" placeholder="123 456 7890" id="phone" name="phone" onkeyup="validatePhone()" value="" required>
-		  <span id="phone-error"></span>
+			  <span id="phone-error"></span>
       </div>
 
       <div class="input-group">
+		  <div class="label">
         <label for="email">Email</label>
-        <input type="email" placeholder="Enter Email" id="email" name="email" onkeyup="validateEmail()" value="" required>
-		  <span id="email-error"></span>
+			  <label class="required">*</label>
+		  </div>
+			  <input type="email" placeholder="Enter Email" id="email" name="email" onkeyup="validateEmail()" value="" required>
+			  <span id="email-error"></span>
       </div>
 
 
       <div class="input-group">
+		  <div class="label">
         <label for="subject">Subject</label>
-        <input type="text" placeholder="Enter the subject of your message" id="subject" name="subject" onkeyup="validateSubject()" value="" required>
-		  <span id="subject-error"></span>
+			  <label class="required">*</label>
+		  </div>
+			  <input type="text" placeholder="Enter the subject of your message" id="subject" name="subject" onkeyup="validateSubject()" value="" required>
+			  <span id="subject-error"></span>
       </div>
 
       <div class="input-group">
+		  <div class="label">
         <label for="message">Your Message</label>
-        <textarea rows="5" placeholder="Enter your message" id="message" name="message" onkeyup="validateMessage()" required></textarea>
-		  <span id="message-error"></span>
+			  <label class="required">*</label>
+		  </div>
+			  <textarea rows="5" placeholder="Enter your message" id="message" name="message" onkeyup="validateMessage()" required></textarea>
+			  <span id="message-error"></span>
 
       </div>
     <button type="submit" onclick="return validateForm()">Submit</button>

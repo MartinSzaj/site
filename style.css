@@ -6,7 +6,7 @@
 .header{
     position: fixed;
     top:0;
-    min-height: 30px ;
+    min-height: 35px ;
     width: 100%;
     background-position: top;
     background-size: cover;
@@ -175,7 +175,7 @@ nav .fa{
     position: relative;
     margin: 25% 0 0 0;
     width: 100%;
-    height: 55vh;
+    height: 380px;
     background: #eef5cb;
 }
 .h-desc{
@@ -205,7 +205,7 @@ nav .fa{
 .div-price{
     position: relative;
     width: 100%;
-    height: 50vh;
+    height: 340px;
     background: #aadafa
 }
 .h-price{
@@ -230,10 +230,6 @@ nav .fa{
     position: absolute;
     left: 5%;
 }
-.order-div{
-    display: flex;
-    align-items: center;
-}
 .contact-btn button{
     display: inline-block;
     text-decoration: none;
@@ -251,35 +247,28 @@ nav .fa{
     transition: 0.5s;
 }
 .contact-btn button:hover{
-    margin: 328px 41.70% 2.5px ;
+    margin: 328px 41.7% 2.5px ;
     padding: 1em 2em;
     background: #35578c;
     transition: 0.5s;
 }
-.formFooter-wrapper{
-    position: sticky;
-    float: bottom;
+.alpha{
+    position: fixed;
+    bottom: 0;
+    right:0;
+    left:0;
+    background-image: linear-gradient(to right, #8aace3, #35578c);
+    z-index: 1000;
 }
-.formFooter{position:fixed;left:0;right:0;bottom:0;padding:0 .875pxem;background-color:#414247;z-index:15}
-.formFooter,.formFooter-wrapper{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center}
-.formFooter-wrapper.formFooter-leftSide{margin-right:auto}
-.formFooter-content{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center}
-.formFooter-rightSide{margin-left:.5pxem}
-.formFooter-rightSide .formFooter-text{color:#bfbfbf;font-size:.75em;margin-right:.9375em}
-.formFooter-button{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-negative:0;flex-shrink:0;width:200px;padding:.625em 0;border-radius:3px;font-size:.875em;transition:background-color .3s}
-.branding21.formFooter{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;background-color:#0a1551}
-.branding21.formFooter .formFooter-logo{height:44px}
-.branding21.formFooter .formFooter-text{color:#f3f3fe}
-.branding21.formFooter .formFooter-button{background-color:#78bb07;border-color:#78bb07}
- .form-input[data-type=control_fullname]
- .form-input{width:100%}table{width:100%!important}}
- @media screen and (max-width:480px){
- div.question-wrapper{-ms-flex-direction:column;flex-direction:column}
- }
+.alpha p{
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 0;
+}
 /*--------Footer---------*/
 .foot{
-    position: absolute;
-    margin: 600px 0 0 0;
+    position: relative;
+    bottom: -50vw;
     height: 300px;
     width: 100%;
     z-index: 10;
@@ -304,7 +293,7 @@ nav .fa{
 .right-inc{
     position: absolute;
     right: 2em;
-    bottom: 1em;
+    bottom: 3em;
     margin: 0;
     font-size: 20px;
     min-height: 2vh;
@@ -336,6 +325,9 @@ nav .fa{
     .div-desc{
         margin: 700px 0 0 0;
     }
+    .div-price{
+        height: 370px;
+    }
     .title1{
         width: 95%;
         padding: 0;
@@ -344,8 +336,17 @@ nav .fa{
         text-align: center;
         width: 95%;
     }
+    .foot{
+        bottom: -70vw;
+    }
+    .contact-btn button{
+        margin: 330px 40%;
+    }
+    .contact-btn button:hover{
+        margin: 338px 39.5%;
+    }
 }
-@media(max-width: 500px){
+@media(max-width: 450px){
      .logo img{
         width: 150px;
     }
@@ -353,16 +354,20 @@ nav .fa{
         font-size: 0.5em;
     }
     .dipping{
-        margin: -27px 0;
+        margin: -21px 0;
     }
     .div-banner{
         width: 100%;
         margin: 0 0;
     }
+    .row{
+        margin:10px 0 0 10px;
+    }
     .home-img{
-        margin: -150px 0 0 0;
+        margin: -150px 0 0 -2vw;
+        left: 0;
         position: relative;
-        width: 100%;
+        width: 98vw;
         height: auto;
     }
     .title1{
@@ -370,21 +375,21 @@ nav .fa{
         left: 0;
         width: 100%;
         padding: 0;
-        margin: 0 -30px;
+        margin: 0;
     }
     .div-banner p{
         font-size: 18px;
-        margin: 0 0;
+        margin: 0;
     }
     .order-btn2 button{
-        font-size: 0.5em;
+        font-size: 1em;
     }
     .order-btn2 button:hover{
-        margin: 3em 0 0 0;
+        margin: 2.9em 0 -0.1em 0;
     }
     .div-desc{
         margin: 250px 0 0 0;
-        height: 100vh;
+        height: 140vw;
     }
     .h-desc{
         font-size: 1.2em;
@@ -397,12 +402,12 @@ nav .fa{
 
     }
     .punctuality-img{
-        margin: 200px 5px;
+        margin: 120px 5px;
         min-height: 100px;
         width: 90%;
     }
     .div-price{
-        height: 60vh;
+        height: 95vw;
     }
     .h-price{
         font-size: 1.3em;
@@ -416,27 +421,19 @@ nav .fa{
         font-size: 18px;
     }
     .contact-btn button{
-        margin: 450px 15%;
+        margin: 95vw 0 0 25%;
     }
     .contact-btn button:hover{
-        margin: 448px 14%;
+        margin: 94.5vw 0 0 24%;
     }
     .price-img{
         width: 90%;
-        margin: 150px 0;
+        margin: 120px 0;
         display: flex;
-    }
-    .sm-img{
-        margin: 50px 5%;
-        width: 90%;
-        display: flex;
-
-    }
-    .sm-img a img{
-        width: 40px;
     }
     .foot{
-        margin: 500px 0 0 0;
+        bottom: -170vw;
+        height: 320px;
     }
     .header{
         background-image: linear-gradient(to right, #8aace3, #35578c);
@@ -471,9 +468,120 @@ nav .fa{
     .fa-times{
         padding:0 0 0 10px;
     }
-
+    .support{
+        font-size: 16px;
+        padding: 28px 5px;
+    }
+    .foot-p{
+        margin: 15px 5px;
+    }
+    .nice-day{
+        margin: 130px 0 0;
+    }
+    .right-inc{
+        bottom: 5.5em;
+        right: 0.5em;
+    }
 }
-@media(min-width: 500px) and (max-width: 800px){
+@media(max-width: 350px){
+    .title1{
+        margin: -50px 0;
+        width: 90vw;
+    }
+    .div-banner p{
+        margin: 0 0 0 -5px;
+        width: 90vw;
+    }
+    contact-btn button{
+        margin: 330px
+    }
+    .order-btn2 button{
+        margin: 3em 0 0 -2.5em;
+    }
+    .order-btn2 button:hover{
+        margin: 2.9em -0.2em -0.1em -2.7em;
+    }
+    .div-desc{
+        height: 160vw;
+
+    }
+    .punctuality-img{
+        margin: 150px 5px;
+    }
+    .div-price{
+        height: 115vw;
+    }
+    .price-img{
+        margin: 150px 0;
+    }
+    .contact-btn button{
+        margin: 105vw 26%;
+        font-size: 0.9em;
+    }
+    .contact-btn button:hover{
+        margin: 104.5vw 24.5%;
+    }
+    .alpha p{
+        font-size: 15px;
+    }
+    .foot{
+        height: 300px;
+        bottom: -130vw;
+    }
+    .right-inc{
+        bottom: 5em;
+    }
+}
+@media(max-width: 290px){
+    .order-btn2 button{
+        margin: 0.5em 0 0 0;
+        font-size: 0.8em;
+    }
+    .order-btn2 button:hover{
+        margin: 0.4em -0.2em -0.1em;
+    }
+    .title1{
+        width: 85vw;
+    }
+    .div-desc{
+        height: 170vw;
+    }
+    .punctuality-img{
+        margin:130px 0 0 0;
+    }
+    .snwy-desc{
+        font-size: 15px;
+    }
+    .div-price{
+        height: 125vw;
+    }
+    .price-img{
+        margin: 140px 0 0 0;
+    }
+    .price{
+        font-size: 15px;
+    }
+    .contact-btn button{
+        margin: 125vw 21%;
+    }
+    .contact-btn button:hover{
+        margin: 124.5vw 20%;
+    }
+    .foot{
+        bottom: calc(75vh - 250vw);
+        height: 300px;
+    }
+    .right-inc{
+        bottom: 5em;
+    }
+    .support{
+        font-size: 14px;
+    }
+    .alpha p{
+        font-size: 14px;
+    }
+}
+@media(min-width: 450px) and (max-width: 800px){
     .logo img{
         width: 150px;
     }
@@ -481,7 +589,7 @@ nav .fa{
         font-size: 0.5em;
     }
     .dipping{
-        margin: -27px 0;
+        margin: -22px 0;
     }
     .div-banner{
         width: 100%;
@@ -504,7 +612,7 @@ nav .fa{
         font-size: 18px;
     }
     .order-btn2 button{
-        font-size: 0.5em;
+        font-size: 1em;
     }
     .order-btn2 button:hover{
         margin: 2.9em 0 0.1em 0;
@@ -545,24 +653,15 @@ nav .fa{
         margin: 250px 30%;
     }
     .contact-btn button:hover{
-        margin: 248px 29.7%;
+        margin: 248px 29.2%;
     }
     .price-img{
         width: 40%;
         margin: 0px 0;
         display: flex;
     }
-    .sm-img{
-        margin: 100px 5%;
-        width: 90%;
-        display: flex;
-
-    }
-    .sm-img a img{
-        width: 40px;
-    }
     .foot{
-        margin: 200px 0 0 0;
+        bottom: -80vw;
     }
     .header{
         background-image: linear-gradient(to right, #8aace3, #35578c);
@@ -597,5 +696,185 @@ nav .fa{
     .fa-times{
         padding:0 0 0 10px;
     }
+    .nice-day{
+        margin: 140px 0;
+    }
+    .right-inc{
+        bottom: 4em;
+    }
+}
+@media(max-width: 290px) and (max-height: 600px){
+    .foot{
+        bottom: -150vw;
+    }
+}
+@media(max-width: 290px) and (max-height: 500px){
+    .foot{
+        bottom: -230vw;
+    }
+}
+@media(max-width: 290px) and (max-height: 400px){
+    .foot{
+        bottom: -300vw;
+    }
+}
+@media(max-width: 290px) and (max-height: 300px){
+    .foot{
+        bottom: -350vw;
+    }
+}
+@media(max-width: 350px) and (max-height: 600px){
+    .foot{
+        bottom: -180vw;
+    }
+}
+@media(max-width: 350px) and (max-height: 500px){
+    .foot{
+        bottom: -240vw;
+    }
+}
+@media(max-width: 350px) and (max-height: 400px){
+    .foot{
+        bottom: -290vw;
+    }
+}
+@media(max-width: 350px) and (max-height: 300px){
+    .foot{
+        bottom: -330vw;
+    }
+}
+@media(max-width: 450px) and (max-height: 550px){
+    .foot{
+        bottom: -210vw;
+    }
+}
+@media(max-width: 450px) and (max-height: 450px){
+    .foot{
+        bottom: -240vw;
+    }
+}
+@media(max-width: 450px) and (max-height: 400px){
+    .foot{
+        bottom: -270vw;
+    }
+    .alpha p{
+        font-size: 13px;
+    }
+}
+@media(max-width: 450px) and (max-height: 320px){
+    .foot{
+        bottom: -300vw;
+    }
+}
+@media(min-width: 450px) and (max-height: 500px) and (max-width: 600px){
+    .foot{
+        bottom: -110vw;
+    }
+}
+@media(min-width: 450px) and (max-height: 450px) and (max-width: 600px){
+    .foot{
+        bottom: -160vw;
+    }
+}
+@media(min-width: 450px) and (max-height: 350px) and (max-width: 530px){
+    .foot{
+        bottom: -180vw;
+    }
+}
+@media(min-width: 450px) and (max-height: 350px) and (max-width: 530px){
+    .foot{
+        bottom: -200vw;
+    }
+}
+@media(min-width: 700px) and (max-height: 450px) and (max-width: 800px){
+    .foot{
+        bottom: -130vw;
+    }
+}
+@media(min-width: 700px) and (max-height: 320px) and (max-width: 800px){
+    .foot{
+        bottom: -150vw;
+    }
+}
+@media(min-width: 600px) and (max-height: 550px) and (max-width: 700px){
+    .foot{
+        bottom: -140vw;
+    }
 }
 
+@media(min-width: 600px) and (max-height: 450px) and (max-width: 700px){
+    .foot{
+        bottom: -140vw;
+    }
+}
+
+@media(min-width: 600px) and (max-height: 330px) and (max-width: 700px){
+    .foot{
+        bottom: -160vw;
+    }
+}
+@media(min-width: 600px) and (max-height: 281px) and (max-width: 700px){
+    .foot{
+        bottom: -70em;
+    }
+}
+@media(min-width: 700px) and (max-height: 500px) and (max-width: 800px){
+    .foot{
+        bottom: -120vw;
+    }
+}
+@media(min-width: 700px) and (max-height: 350px) and (max-width: 800px){
+    .foot{
+        bottom: -140vw;
+    }
+}
+@media(min-width: 700px) and (max-height: 280px) and (max-width: 800px){
+    .foot{
+        bottom: -155vw;
+    }
+}
+@media(min-width: 800px) and (max-height: 700px) and (max-width: 1200px){
+    .foot{
+        bottom: -140vh;
+    }
+}
+@media(min-width: 800px) and (max-height: 570px) and (max-width: 1200px){
+    .foot{
+        bottom: -200vh;
+    }
+}
+@media(min-width: 800px) and (max-height: 500px) and (max-width: 1200px){
+    .foot{
+        bottom: -250vh;
+    }
+}
+@media(min-width: 800px) and (max-height: 430px) and (max-width: 1200px){
+    .foot{
+        bottom: -85em;
+    }
+}
+@media(min-width: 800px) and (max-height: 270px) and (max-width: 1200px){
+    .foot{
+        bottom: -95em;
+    }
+}
+@media(max-height: 700px) and (min-width: 1200px){
+    .foot{
+        bottom: -30em;
+    }
+}
+@media(max-height: 550px) and (min-width: 1200px){
+    .foot{
+        bottom: -45em;
+    }
+}
+@media(max-height: 380px) and (min-width: 1200px){
+    .foot{
+        bottom: -60em;
+    }
+}
+@media(max-height: 300px) and (min-width: 1200px){
+    .foot{
+        bottom: -70em;
+    }
+}
