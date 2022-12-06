@@ -268,7 +268,7 @@ nav .fa{
 /*--------Footer---------*/
 .foot{
     position: relative;
-    bottom: -50vw;
+    bottom: -20em;
     height: 300px;
     width: 100%;
     z-index: 10;
